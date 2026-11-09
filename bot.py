@@ -4,7 +4,13 @@ import discord
 from discord import app_commands
 
 import os
-TOKEN = os.getenv("MTU2ODExNDAyMDE4MjAwNzg2MA.GGuwd4.L7d6WSaq2yG8Lpa-R-R0I86XTzF-O5NNKlYyHY")
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+
+bot.run(TOKEN)
 
 # 메인 음식 : 어울리는 사이드 5개
 MENU = {
