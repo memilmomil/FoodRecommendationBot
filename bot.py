@@ -10,8 +10,6 @@ load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-bot.run(TOKEN)
-
 # 메인 음식 : 어울리는 사이드 5개
 MENU = {
     "김치찌개": ["계란말이", "김치전", "공기밥", "소시지야채볶음", "두부부침"],
@@ -326,5 +324,5 @@ async def recommend(interaction: discord.Interaction):
 async def on_ready():
     print(f"로그인 완료: {bot.user}")
 
-
+bot.run(TOKEN)
 bot.run(TOKEN)
